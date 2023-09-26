@@ -80,10 +80,12 @@
         const projectVideo = project.querySelector('.project-video');
 
         projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
             projectVideo.play();
         });
 
         projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
             projectVideo.pause();
             projectVideo.currentTime = 0; // Rewind video to the beginning
         });
