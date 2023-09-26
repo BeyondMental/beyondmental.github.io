@@ -1,34 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0F0;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 4rem;
-            margin-top: 20vh;
-        }
-
-        p {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        a {
-            color: #00F;
-        }
-    </style>
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Oops!</h1>
-    <p>I guess I didn't make the website public in time for grading. Sorry, Professor Hahn, I do own this domain! - Aidan Brownstein</p>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="your-logo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h2 class="subtitle">Hi! My name is</h2>
+        <h1 class="bigtitle">Aidan Brownstein</h1>
+      <h2 class="subtitle">and I am a <span style="color: #ff9900">Game Programmer!</span></h2>
+    </div>
+    <div id="about-me-section">
+        <h2 class="title"><span style="font-size: 36px">About Me</span></h2>
+        <div class="about-me-content">
+            <img src="headshot.jpg" alt="Aidan Brownstein's Headshot" class="headshot">
+            <p class="about-me-paragraph">With programming skills that have developed for over a decade, I first found a passion for game development eight years ago. Since then, I have been developing games in a variety of engines and genres. From <i>Amazon Lumberyard</i> to <i>Unreal</i>, I've dipped my toes in it. On here you'll find some games and software projects that I've worked on. Alongside a blog going into technical detail on interesting mechanics and features from said projects! (This is going to take a lot longer to make so maybeeee exclude it from the rough draft) Take a look, I hope you find something interesting. </p>
+        </div>
+    </div>
+    <div id="code-background">
+      
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
