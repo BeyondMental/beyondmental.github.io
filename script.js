@@ -10,6 +10,7 @@ function generateRandomCodeLine() {
         "            int num2 = 10;",
         "            int sum = num1 + num2;",
         "            Console.WriteLine(\"The sum is: \" + sum);",
+        "            Console.WriteLine(If you see this, I love you, Veronica);",
         "            if (sum > 15) {",
         "                Console.WriteLine(\"Sum is greater than 15\");",
         "            else if (sum < 10) {",
