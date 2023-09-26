@@ -45,21 +45,21 @@
       <div class="project">
                 <div class="project-hover">
                     <img src="beyondmental.github.io/ChromaspectraThumbnail.jpg" alt="ChromaSpectra" class="project-image">
-                    <video src="beyondmental.github.io/ChromaspectraHighlightVid.mp4" class="project-video" preload="auto" autoplay muted loop playsinline></video>
+                    <video src="beyondmental.github.io/ChromaspectraHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
                 </div>
                 <p class="project-title">ChromaSpectra</p>
             </div>
       <div class="project">
                 <div class="project-hover">
                     <img src="beyondmental.github.io/RetainerReformationThumbnail.png" alt="Retainer Reformation" class="project-image">
-                    <video src="beyondmental.github.io/RRHighlightVid.mp4" class="project-video" preload="auto" autoplay muted loop playsinline></video>
+                    <video src="beyondmental.github.io/RRHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
                 </div>
                 <p class="project-title">Retainer Reformation</p>
             </div>
       <div class="project">
                 <div class="project-hover">
                     <img src="beyondmental.github.io/DevilHuntersThumbnail.jpg" alt="Game 1" class="project-image">
-                    <video src="beyondmental.github.io/DevilHuntersHighlightVid.mp4" class="project-video" preload="auto" autoplay muted loop playsinline></video>
+                    <video src="beyondmental.github.io/DevilHuntersHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
                 </div>
                 <p class="project-title">Devil Hunters</p>
             </div>
@@ -70,5 +70,25 @@
       
     </div>
     <script src="beyondmental.github.io/script.js"></script>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
 </body>
 </html>
