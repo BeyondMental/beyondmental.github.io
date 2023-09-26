@@ -109,7 +109,6 @@ nav a:hover {
     padding: 20px;
     position: relative;
     z-index: 1;
-    margin-bottom: 50px;
 }
 
 .section-title {
@@ -132,73 +131,4 @@ nav a:hover {
 
 .about-me-paragraph {
     font-size: 24px; /* Font size for the about me paragraph */
-}
-
-#featured-projects-section {
-    background-color: #333; /* Background color for the "Featured Projects" section */
-    padding: 20px;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-}
-
-.project-images {
-    display: flex;
-    justify-content: center;
-}
-
-.project-image {
-    width: 400px; /* Adjust the width of the project images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for the project images */
-    margin: 0 30px; /* Adjust the margin as needed */
-}
-
-.project {
-    position: relative;
-    margin: 0 10px; /* Adjust the margin as needed */
-    text-align: center;
-    overflow: hidden;
-    cursor: pointer; /* Change cursor on hover */
-}
-
-.project-hover {
-    position: relative;
-    transition: transform 0.3s ease; /* Add a transition for scaling */
-}
-
-.project-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Background color for the title */
-    color: #fff; /* Text color for the title */
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 32px; /* Font size for the title */
-}
-
-.project:hover .project-hover {
-    transform: scale(1.1); /* Increase the size on hover */
-}
-
-.project-image {
-    width: 400px; /* Adjust the width of the project images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for the project images */
-}
-
-.project-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the video covers the image */
-    display: none; /* Initially hide the video */
-}
-
-.project:hover .project-video {
-    display: block; /* Show the video on hover */
 }
