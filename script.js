@@ -90,7 +90,7 @@ function animateCode() {
 
         codeBackground.appendChild(codeLine); // Add a new line at the bottom
 
-        if (codeBackground.childElementCount > 15) {
+        if (codeBackground.childElementCount > 20) {
             codeBackground.removeChild(codeBackground.firstChild); // Remove the first line
         }
     }, 100); // Adjust the interval for scrolling speed
