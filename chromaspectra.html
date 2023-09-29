@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">ChromaSpectra</h1>
+      <h2 class="subtitle">Third-person Puzzler filled with <span style="color: #ff9900">Heart!</span></h2>
+    </div>
+  <div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>
+          <div id="about-me-section">
+            <h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">In this project I utilized the <span style="color: #ff9900">Unity </span> game engine and <span style="color: #ff9900">Plastic SCM</span> for version control between multiple team members.</p>
+               <h2 class="title"><span style="font-size: 36px">About ChromaSpectra</span></h2>
+            <p class="maintext">ChromaSpectra is a third person puzzle game. You play as Claire Voyant, an medium with a special ocarina, you must utilize the powers of color and sound to help the deceased peacefully pass. The game is currently a vertical slice, featuring a tutorial level were the player helps Bertha Marigold and her cat Pickles.</p>
+            <h2 class="title"><span style="font-size: 36px">My Contributions</span></h2>
+            <h3 class="contrtitle">Dynamic Camera</h3>
+            <p class="maintext">I developed the fixed camera system for the game. Every camera location had an associated trigger on the ground. As the player entered a new trigger area, the camera would dynamically move to the next fixed location. These camera locations were procedurally generated based on the trigger locations, allowing for easier development of larger areas. The camera could also moved in to focus on the player or other elements for cutscenes and playing the ocarina.</p>
+            <h3 class="contrtitle">Interaction & Inventory System</h3>
+            <p class="maintext">Throughout the game, players would need to interact and use items for puzzles and progression. The game's item class was able to keep track of the item's sprite and name, and store those intuitively in the player inventory for later use. As a result, any item could be added to the inventory with a single action, and utilized in puzzles through it's interaction.</p>
+            <h3 class="contrtitle">Scalable Dialogue</h3>
+            <p class="maintext">The text interpreting from <i>Spring Cleaning</i> was utilized for ChromaSpectra, allowing for dialogue to be written in TextDocuments or Json files. This time, the system was expanded allowing for dialogue between multiple targets. The dialogue also interacts with camera, allowing for the camera to focus on targets in response to the dialogue. </p>
+            <h2 class="title"><span style="font-size: 36px">Download Here!</span></h2>
+            <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/2255032?link_color=ff9900" width="552" height="167"><a href="https://cj-heckfire.itch.io/chromaspectra">ChromaSpectra by CJ_Heckfire, sòsó, abrownstein, srirachawhale</a></iframe></span>
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/ChromaspectraHighlightVid.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
