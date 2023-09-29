@@ -104,6 +104,18 @@ nav a:hover {
     color: #fff; /* Subtitle text color */
 }
 
+.maintext{
+  font-size: 24px; /* Adjust the font size for the subtitle */
+  margin-left: 20px;
+}
+
+.contrtitle{
+  font-size: 27px; /* Adjust the font size for the subtitle */
+  margin-left: 20px;
+  margin-bottom: -20px;
+  color: #ff9900
+}
+
 #about-me-section {
     background-color: #333; /* Background color for the "About Me" section */
     color: #fff; /* Text color for the "About Me" section */
