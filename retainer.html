@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">Retainer Reformation</h1>
+      <h2 class="subtitle">3D First Person <span style="color: #ff9900">Stealth</span>  Horror Game</h2>
+    </div>
+  <div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RetainerReformation/RetainerReformation1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RetainerReformation/RetainerReformation2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RetainerReformation/RetainerReformation3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>
+          <div id="about-me-section">
+            <h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">As the sole developer on this project, I utilized the <span style="color: #ff9900">Unreal Engine 5</span> alongside <span style="color: #ff9900">Quixel Bridge</span> and <span style="color: #ff9900">3ds Max </span>for asset creation.</p>
+               <h2 class="title"><span style="font-size: 36px">About Retainer Reformation</span></h2>
+            <p class="maintext">Retainer Reformation is a first person stealth game with horror and platforming elements. Waking up in your prison cell, you musy explore the abandoned facility. Hide from the enemies patrolling, solve puzzles, and find notes slowly uncovering the story of what is happening.</p>
+            <h2 class="title"><span style="font-size: 36px">My Contributions</span></h2>
+            <h3 class="contrtitle">Unreal Prototyping</h3>
+            <p class="maintext">Unreal's rapid prototyping and level whiteboxing tools were designed to create and playtest all of the game's level's from scratch. After completing a whitebox, levels were expanded and developed using a combination of Quixel and original game assets. The end result was a game with quality level design and visuals.</p>
+            <h3 class="contrtitle">Enemy Chase AI</h3>
+            <p class="maintext">Enemies throughout the game chase the player, with their AI being programmed using Unreal Engine's blueprint system. Enemies will wonder around, until they see a player within their vision cone. From there, they will chase the player until they either catch said player or lose site of them. Every enemy in the game also has animations associated with their AI states.</p>
+            <h3 class="contrtitle">Puzzle Scripting</h3>
+            <p class="maintext">All the puzzles located throughout the game were programmed using the logic from Unreal Engine's blueprint system. While some of these puzzles are as simple as a lock and key, others require multiple simultaneous elements. These often require cutscenes would moving parts or scripts that control environmental hazards. </p>
+            <h2 class="title"><span style="font-size: 36px">Download Here!</span></h2>
+            <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/2288686?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/retainer-reformation">Retainer Reformation by abrownstein</a></iframe></span>
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/RRHighlightVid.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
