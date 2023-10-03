@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">Newton's Delivery Service</h1>
+      <h2 class="subtitle"><span style="color: #ff9900">Gravity Manipulating</span> First-Person Platformer!</h2>
+    </div>
+  <!--<div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>-->
+          <div id="about-me-section">
+            <<h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">Newton's Delivery Service is being developed using <span style="color: #ff9900">Unity</span>, with assets being creating in  <span style="color: #ff9900">3ds Max, Blender,</span> and <span style="color: #ff9900">Substance Painter</span>. </p>
+               <h2 class="title"><span style="font-size: 36px">About Newton's Delivery Service</span></h2>
+            <p class="maintext">My passion project! Newton’s Delivery Service is a first-person platformer that places the player in the role of the newest hire of the titular company. It is up to you to deliver packages as fast as possible while learning to manipulate gravity!</p>
+            <h2 class="title"><span style="font-size: 36px">Features</span></h2>
+            <h3 class="contrtitle">Gravity-Manipulating Player Controller</h3>
+            <p class="maintext">The player character of Newton's Delivery Service utilizes an internal physics engine, allowing for gravity to be flipped upside down at a button's press! All of the players other actions, including jumping, sliding, wallrunning, and even a grappling hook, all work in both gravities. You can even reverse gravity mid action!</p> 
+            <h3 class="contrtitle">Speedrun Focused Levels</h3>
+            <p class="maintext">The levels in Newton's Delivery Service are designed to be finished in a minute or two, encouraging players to try again and improve their time. Each "district" of the city has unique obstacles and mechanics, it is up to you to learn their nuances and overcome their challenges.</p>
+            <h3 class="contrtitle">Leaderboards</h3>
+            <p class="maintext">Once again encouraging players to go fast, climb the game's leaderboards and race to be the number one employee of Newton's Delivery Service! Anti-cheat was developed to track the player's movement, and invalidate all attempts that are physically impossible. These leaderboards are currently hosted on Unity Gaming Services. </p>
+            <h3 class="contrtitle">Online Multiplayer</h3>
+            <p class="maintext">What's better then racing against the clock? Racing against your peers! Compete to see who is the fastest delivery driver while randomly chosen effects shake up the competition</p>
+            <h2 class="title"><span style="font-size: 36px">Newton's Delivery Service is Hoping to Release in 2024!</span></h2>
+            <h3 class="contrtitle" style="margin-bottom: 20px">Be on the lookout for demos and beta tests!</h3>
+            <!-- <span style="margin-left: 20px"><iframe width="640" height="480" src="https://www.youtube.com/embed/HIol2wtWvu0" title="Shadows Of The Nexus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/NewtonsHighlightVideo.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
