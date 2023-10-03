@@ -1,0 +1,98 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">R.R.R.</h1>
+      <h2 class="subtitle"> Comedic <span style="color: #ff9900">Zombie</span> 3D Third-Person Platformer</h2>
+    </div>
+  <div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RRR/RRR1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RRR/RRR2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/RRR/RRR3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>
+          <div id="about-me-section">
+            <h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">For this project, I utilized <span style="color: #ff9900">Unreal Engine</span> for development, alongside  <span style="color: #ff9900">3ds Max, Blender,</span> and <span style="color: #ff9900">Substance Painter</span> for character animation and asset creation.</p>
+               <h2 class="title"><span style="font-size: 36px">About R.R.R.</span></h2>
+            <p class="maintext">R.R.R., shortened from Reanimated. Rebuilt. Revengeful., is a comedic 3D platformer about a zombie trying to get revenge on the redneck who tore him apart. Explore and collect throughout multiple levels! </p>
+            <h2 class="title"><span style="font-size: 36px">My Contributions</span></h2>
+            <h3 class="contrtitle">Three Character Controllers</h3>
+            <p class="maintext">The game features three unique character controllers, one for each level. The first level features a physics based rolling head, complete with bounciness upon collisions. The 2nd level has a crawling torso with synced animations. The 3rd features the whole body once again, once again, fully animated.</p> 
+            <h3 class="contrtitle">Hazard Behaviors/Programming</h3>
+            <p class="maintext">All hazards were developed using Unreal's blueprint system. These hazards include crows programmed to fly back and forth, alongside full animations and sound effects. Later levels also have bear traps which close when the player gets close. These once again have original animations and sound effects.</p>
+            <h3 class="contrtitle">Collectibles</h3>
+            <p class="maintext">Throughout the levels, players can encounter two types of collectibles. Brains, which are more common, give a lower score on pick up. Bones are more rare, but give a higher score. These collectibles were programmed to work with all three character controllers, alongside rotation and sound effects. </p>
+            <!--<h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
+            <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/1473301?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/spring-cleaning">Spring Cleaning by abrownstein</a></iframe></span>-->
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/RRRHighlightVid.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
