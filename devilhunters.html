@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">Devil Hunters</h1>
+      <h2 class="subtitle"> Anime-Inspired Fast-paced <span style="color: #ff9900">Tabletop RPG</span></h2>
+    </div>
+  <!--<div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/ChromaSpectra/Screenshot3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>-->
+          <div id="about-me-section">
+            <!--<h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">For this project, I utilized <span style="color: #ff9900">Unreal Engine</span> for development, alongside  <span style="color: #ff9900">3ds Max, Blender,</span> and <span style="color: #ff9900">Substance Painter</span> for character animation and asset creation.</p>-->
+               <h2 class="title"><span style="font-size: 36px">About Devil Hunters</span></h2>
+            <p class="maintext">Devil Hunters in an original tabletop roleplaying game inspired by the work of mangaka, Tatsuki Fujimoto. Create your own devil hunters, each in a contract with powerful devils, and face the brutal world of devil hunting as a team!</p>
+            <h2 class="title"><span style="font-size: 36px">Features</span></h2>
+            <h3 class="contrtitle">Simplified Statistics</h3>
+            <p class="maintext">Characters in <i>Devil Hunters</i> have three stats: brutality, flow, and smartness. With only three stats, and zero substats, players have less numbers to worry about. This allows for rolls to resolve faster than the average TTRPG.</p> 
+            <h3 class="contrtitle">Health/Blood System</h3>
+            <p class="maintext">The resource used for devil abilities is tied to the player's <i>Blood Gauge</i>. This resource replenishes to the player's max health at the start of each round of combat, but using blood makes players vulnerable to higher damage. This risk/reward encourages players to use abilities more often, while working as a team to remain in stable condition. </p>
+            <h3 class="contrtitle">Fast-Paced Combat</h3>
+            <p class="maintext">By removing the need to roll for damage, removing turn order/initiative, allowing devil abilities to be used at any time, and giving enemies additional turns on failed rolls; the pace of combat is much faster than other TTRPGs. This keeps combat more engaging and energetic for the players.</p>
+            <h3 class="contrtitle">Roleplay Opportunities</h3>
+            <p class="maintext">By utilizing the popularity and fear systems, the world of <i>Devil Hunters</i> reacts to the player's actions. How will the general public respond to your player's actions? Will you become a devil slaying sensation or a feared hunter? Encounters change based on you're known! </p>
+            <h2 class="title"><span style="font-size: 36px">Watch A Game</span></h2>
+            <h3 class="contrtitle" style="margin-bottom: 20px">Beta tests of Devil Hunters are streamed live on Twitch! Check out some beta gameplay!</h3>
+            <span style="margin-left: 20px"><iframe width="640" height="480" src="https://www.youtube.com/embed/HIol2wtWvu0" title="Shadows Of The Nexus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/DevilHuntersHighlightVid.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
