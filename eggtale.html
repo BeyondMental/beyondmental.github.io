@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">Eggtale</h1>
+      <h2 class="subtitle">Handdrawn 2D Platformer Takes <span style="color: #ff9900">Flight!</span></h2>
+    </div>
+  <div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/EggTale/Eggtale1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/EggTale/Eggtale2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+  </div>
+  </div>
+          <div id="about-me-section">
+            <h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">As the lead programmer on this project, I utilized the <span style="color: #ff9900">Unity</span> game engine for the development of this project.</p>
+            <h2 class="title"><span style="font-size: 36px">About EggTale</span></h2>
+            <p class="maintext">EggTale is a 2D platformer developed over the course of a month. Traverse through multiple levels using a variety of different movement options. Avoid enemies and take to the sky! </p>
+            <h2 class="title"><span style="font-size: 36px">My Contributions</span></h2>
+            <h3 class="contrtitle">Character Movement and Animation</h3>
+            <p class="maintext">Alongside the standard running and jumping, player's have additional movement options at their disposal. This includes Wile E. Coyote time, a double jump, and a glide. Each of these are attached to a state machine controlling our main character's expressive handdrawn animation and sound effects.</p> 
+            <h3 class="contrtitle">Enemy AI</h3>
+            <p class="maintext">Enemy's have been programmed to patrol the area based off the points they've been assigned. They can be assigned an theoritically infinite amount of points to patrol between. These points are not affected vertically, with scripting automatically adjusting the points to keep the enemies grounded.</p>
+            <h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
+            <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/1526286?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/eggtale">EggTale by abrownstein</a></iframe></span>
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/EggTaleHighlightVid.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+    // Get all project elements
+    const projects = document.querySelectorAll('.project');
+
+    // Add event listeners to each project
+    projects.forEach(project => {
+        const projectImage = project.querySelector('.project-image');
+        const projectVideo = project.querySelector('.project-video');
+
+        projectImage.addEventListener('mouseenter', () => {
+            projectVideo.style.display = 'block'; // Show the video
+            projectVideo.play();
+        });
+
+        projectImage.addEventListener('mouseleave', () => {
+            projectVideo.style.display = 'none'; // Hide the video
+            projectVideo.pause();
+            projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+    });
+</script>
+
+</body>
+</html>
