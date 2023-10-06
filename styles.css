@@ -117,7 +117,9 @@ nav a:hover {
 }
 
 #about-me-section {
-    background-color: #333; /* Background color for the "About Me" section */
+    background-image: url(https://i.postimg.cc/wB0G9DJS/blackpattern.png);
+    background-size: 300px, 300px;
+    /*background-color: #333; /* Background color for the "About Me" section */
     color: #fff; /* Text color for the "About Me" section */
     padding: 20px;
     position: relative;
