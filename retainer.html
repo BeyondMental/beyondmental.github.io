@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="beyondmental.github.io/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
-<body>
+<body onload="getPics()">
     <header>
         <div class="banner">
             <div class="left-content">
@@ -63,6 +63,10 @@
             <p class="maintext">Enemies throughout the game chase the player, with their AI being programmed using Unreal Engine's blueprint system. Enemies will wonder around, until they see a player within their vision cone. From there, they will chase the player until they either catch said player or lose site of them. Every enemy in the game also has animations associated with their AI states.</p>
             <h3 class="contrtitle">Puzzle Scripting</h3>
             <p class="maintext">All the puzzles located throughout the game were programmed using the logic from Unreal Engine's blueprint system. While some of these puzzles are as simple as a lock and key, others require multiple simultaneous elements. These often require cutscenes would moving parts or scripts that control environmental hazards. </p>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Video</span></h2>
+            <video width="854" height="480" controls>
+            <source src="beyondmental.github.io/RRHighlightVid.mp4?tag=12" type="video/mp4">
+            </video>
             <h2 class="title"><span style="font-size: 36px">Download Here!</span></h2>
             <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/2288686?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/retainer-reformation">Retainer Reformation by abrownstein</a></iframe></span>
         </div>
@@ -75,6 +79,16 @@
     </video>
     </div>
     <script>
+    function getPics() {}
+    const imgs = document.querySelectorAll('#about-me-section img');
+    const fullPage = document.querySelector('#fullpage');
+
+    imgs.forEach(img => {
+      img.addEventListener('click', function() {
+        fullPage.style.backgroundImage = 'url(' + img.src + ')';
+        fullPage.style.display = 'block';
+      });
+    });
     // Get all project elements
     const projects = document.querySelectorAll('.project');
 
