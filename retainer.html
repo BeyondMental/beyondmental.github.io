@@ -6,9 +6,8 @@
     <title>Portfolio - Projects</title>
     <link rel="stylesheet" href="beyondmental.github.io/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script src="beyondmental.github.io/expandImage.js"></script>
 </head>
-<body onload="getPics()">
+<body>
     <header>
         <div class="banner">
             <div class="left-content">
@@ -81,19 +80,9 @@
     </video>
     </div>
     <script>
-    function getPics() {}
-    const imgs = document.querySelectorAll('#about-me-section img');
-    const fullPage = document.querySelector('#fullpage');
-
-    imgs.forEach(img => {
-      img.addEventListener('click', function() {
-        fullPage.style.backgroundImage = 'url(' + img.src + ')';
-        fullPage.style.display = 'block';
-      });
-    });
     // Get all project elements
     const projects = document.querySelectorAll('.project');
-
+    const fullPage = document.querySelector('#fullpage');
     // Add event listeners to each project
     projects.forEach(project => {
         const projectImage = project.querySelector('.project-image');
@@ -108,6 +97,11 @@
             projectVideo.style.display = 'none'; // Hide the video
             projectVideo.pause();
             projectVideo.currentTime = 0; // Rewind video to the beginning
+        });
+
+        projectImage.addEventListener('click', function() {
+            fullPage.style.backgroundImage = 'url(' + img.src + ')';
+            fullPage.style.display = 'block';
         });
     });
 </script>
