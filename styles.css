@@ -234,7 +234,7 @@ nav a:hover {
   background-position: center center;
 }
 
-#fullpage::before {
+#fullpage::after{
   content: "";
   position: fixed;
   top: 0;
