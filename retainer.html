@@ -80,30 +80,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
-    const fullPage = document.querySelector('#fullpage');
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-
-        projectImage.addEventListener('click', function() {
-            fullPage.style.backgroundImage = 'url(' + img.src + ')';
-            fullPage.style.display = 'block';
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
