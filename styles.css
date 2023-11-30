@@ -225,8 +225,8 @@ nav a:hover {
   display: none;
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
+  top: 10%;
+  left: 10%;
   width: 80vw;
   height: 80vh;
   background-size: cover;
