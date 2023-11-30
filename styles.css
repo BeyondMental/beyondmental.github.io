@@ -236,7 +236,7 @@ nav a:hover {
 
 #fullpage::after{
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
