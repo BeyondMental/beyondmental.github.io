@@ -54,6 +54,8 @@
             <p class="maintext">Alongside the standard running and jumping, player's have additional movement options at their disposal. This includes Wile E. Coyote time, a double jump, and a glide. Each of these are attached to a state machine controlling our main character's expressive handdrawn animation and sound effects.</p> 
             <h3 class="contrtitle">Enemy AI</h3>
             <p class="maintext">Enemy's have been programmed to patrol the area based off the points they've been assigned. They can be assigned an theoritically infinite amount of points to patrol between. These points are not affected vertically, with scripting automatically adjusting the points to keep the enemies grounded.</p>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Video</span></h2>
+            <span style="margin-left: 20px"><iframe width="854" height="480" src="https://www.youtube.com/embed/JxFFax8bpn8" title="EggTale Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
             <h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
             <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/1526286?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/eggtale">EggTale by abrownstein</a></iframe></span>
         </div>
@@ -66,25 +68,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
