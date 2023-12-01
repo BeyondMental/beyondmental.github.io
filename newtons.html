@@ -63,6 +63,8 @@
             <p class="maintext">Once again encouraging players to go fast, climb the game's leaderboards and race to be the number one employee of Newton's Delivery Service! Anti-cheat was developed to track the player's movement, and invalidate all attempts that are physically impossible. These leaderboards are currently hosted on Unity Gaming Services. </p>
             <h3 class="contrtitle">Online Multiplayer</h3>
             <p class="maintext">What's better then racing against the clock? Racing against your peers! Compete to see who is the fastest delivery driver while randomly chosen effects shake up the competition</p>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Development Video</span></h2>
+            <span style="margin-left: 20px"><iframe width="854" height="480" src="https://www.youtube.com/embed/pqB9k4oCRo8" title="Newton&#39;s Delivery Service Early Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
             <h2 class="title"><span style="font-size: 36px">Newton's Delivery Service is Hoping to Release in 2024!</span></h2>
             <h3 class="contrtitle" style="margin-bottom: 20px">Be on the lookout for demos and beta tests!</h3>
             <!-- <span style="margin-left: 20px"><iframe width="640" height="480" src="https://www.youtube.com/embed/HIol2wtWvu0" title="Shadows Of The Nexus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
@@ -76,25 +78,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
