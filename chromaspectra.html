@@ -49,6 +49,7 @@
     </div>
   </div>
   </div>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
           <div id="about-me-section">
             <h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
             <p class="maintext">In this project I utilized the <span style="color: #ff9900">Unity </span> game engine and <span style="color: #ff9900">Plastic SCM</span> for version control between multiple team members.</p>
@@ -61,6 +62,8 @@
             <p class="maintext">Throughout the game, players would need to interact and use items for puzzles and progression. The game's item class was able to keep track of the item's sprite and name, and store those intuitively in the player inventory for later use. As a result, any item could be added to the inventory with a single action, and utilized in puzzles through it's interaction.</p>
             <h3 class="contrtitle">Scalable Dialogue</h3>
             <p class="maintext">The text interpreting from <i>Spring Cleaning</i> was utilized for ChromaSpectra, allowing for dialogue to be written in TextDocuments or Json files. This time, the system was expanded allowing for dialogue between multiple targets. The dialogue also interacts with camera, allowing for the camera to focus on targets in response to the dialogue. </p>
+            <h2 class="title"><span style="font-size: 36px">GameplayVideo</span></h2>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/9kpNUeTuNmM" title="Chroma Spectra HashtagCon Build" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h2 class="title"><span style="font-size: 36px">Download Here!</span></h2>
             <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/2255032?link_color=ff9900" width="552" height="167"><a href="https://cj-heckfire.itch.io/chromaspectra">ChromaSpectra by CJ_Heckfire, sòsó, abrownstein, srirachawhale</a></iframe></span>
         </div>
@@ -73,25 +76,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
