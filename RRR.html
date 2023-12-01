@@ -61,7 +61,9 @@
             <p class="maintext">All hazards were developed using Unreal's blueprint system. These hazards include crows programmed to fly back and forth, alongside full animations and sound effects. Later levels also have bear traps which close when the player gets close. These once again have original animations and sound effects.</p>
             <h3 class="contrtitle">Collectibles</h3>
             <p class="maintext">Throughout the levels, players can encounter two types of collectibles. Brains, which are more common, give a lower score on pick up. Bones are more rare, but give a higher score. These collectibles were programmed to work with all three character controllers, alongside rotation and sound effects. </p>
-            <!--<h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Video</span></h2>
+              <span style="margin-left: 20px"><iframe width="1280" height="720" src="https://www.youtube.com/embed/dRx2iUBvbBs" title="R.R.R. Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+              <!--<h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
             <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/1473301?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/spring-cleaning">Spring Cleaning by abrownstein</a></iframe></span>-->
         </div>
     <div id="about-me-section">
@@ -73,25 +75,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
