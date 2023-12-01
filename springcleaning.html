@@ -56,6 +56,8 @@
             <p class="maintext">While the game has no moveable character, it utilized multiple moving elements in order to keep it engaging. This included a moving camera and UI elements. By having the camera move around a larger image, it helps gives the room a since of space. The moving UI keeps the screen clutter free while still conveying crucial info when needed.</p>
             <h3 class="contrtitle">Dynamic Soundtrack</h3>
             <p class="maintext">Depending on the player's choices, the game's soundtrack progressively got either claustrophobic or empty. While this system originally utilized Unity's Audio Mixer, it was later unsupported in the WebGL build of the game. The system in the final game uses multiple audio sources playing in the background, with code controlling their volume based on interaction. </p>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Video</span></h2>
+            <span style="margin-left: 20px"><iframe width="854" height="480" src="https://www.youtube.com/embed/DfEa9RNHu6Y" title="Spring Cleaning Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
             <h2 class="title"><span style="font-size: 36px">Play Here!</span></h2>
             <span style="margin-left: 20px"><iframe frameborder="0" src="https://itch.io/embed/1473301?link_color=ff9900" width="552" height="167"><a href="https://abrownstein.itch.io/spring-cleaning">Spring Cleaning by abrownstein</a></iframe></span>
         </div>
@@ -68,25 +70,15 @@
     </video>
     </div>
     <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
 
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-        });
-    });
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
 </script>
 
 </body>
