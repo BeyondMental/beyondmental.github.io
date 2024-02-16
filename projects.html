@@ -133,7 +133,7 @@
   </div>
     <div id="code-background">
             <video id="background-video" autoplay muted loop playsinline>
-      <source src="beyondmental.github.io/ProjectPageVid.mp4" type="video/mp4">
+      <source src="beyondmental.github.io/ProjectPageVid.mp4" type="video/mp4" class="background-video">
     </video>
     </div>
     <script>
@@ -144,16 +144,19 @@
     projects.forEach(project => {
         const projectImage = project.querySelector('.project-image');
         const projectVideo = project.querySelector('.project-video');
+        const backVideo = project.querySelector('.background-video');
 
         projectImage.addEventListener('mouseenter', () => {
             projectVideo.style.display = 'block'; // Show the video
             projectVideo.play();
+            backVideo.style.display = 'none';
         });
 
         projectImage.addEventListener('mouseleave', () => {
             projectVideo.style.display = 'none'; // Hide the video
             projectVideo.pause();
             projectVideo.currentTime = 0; // Rewind video to the beginning
+            backVideo.style.display = 'block';
         });
     });
 </script>
