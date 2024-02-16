@@ -218,7 +218,7 @@ nav a:hover {
     -o-filter: blur(15px);
     -ms-filter: blur(15px);
     filter: blur(15px);
-    z-index: -1; /* Place it behind other content */
+    z-index: -10; /* Place it behind other content */
 }
 
 #fullpage {
