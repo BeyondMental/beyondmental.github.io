@@ -149,14 +149,14 @@
         projectImage.addEventListener('mouseenter', () => {
             projectVideo.style.display = 'block'; // Show the video
             projectVideo.play();
-            backVideo.style.display = 'none';
+            backVideo.pause();
         });
 
         projectImage.addEventListener('mouseleave', () => {
             projectVideo.style.display = 'none'; // Hide the video
             projectVideo.pause();
             projectVideo.currentTime = 0; // Rewind video to the beginning
-            backVideo.style.display = 'block';
+            backVideo.play();
         });
     });
 </script>
