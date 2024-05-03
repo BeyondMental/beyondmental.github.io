@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="beyondmental.github.io/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="left-content">
+                <div class="logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                </div>
+                <div class="title">
+                    <h1>Aidan Brownstein</h1>
+                </div>
+            </div>
+            <nav class="right-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!--<li><a href="blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="title-section">
+        <h1 class="bigtitle">Time Bound</h1>
+      <h2 class="subtitle">GMU Themed <span style="color: #ff9900">Run-and-Gun</span> Shooter</h2>
+    </div>
+  <div id="about-me-section">
+    <div class="about-me-content" style="justify-content: center">
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/Timebound/Timebound1.png" alt="Screenshot1" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/Timebound/Timebound2.png" alt="Screenshot2" class="project-image">
+                </div>
+            </div>
+      <div class="project">
+                <div class="project-hover">
+                    <img src="beyondmental.github.io/Timebound/Timebound3.png" alt="Screenshot3" class="project-image">
+            </div>
+    </div>
+  </div>
+  </div>
+          <div id="about-me-section">
+            <<h2 class="title"><span style="font-size: 36px">Software Used</span></h2>
+            <p class="maintext">Time Bound was developed using <span style="color: #ff9900">Unity</span>, with source management for over 30 team members through <span style="color: #ff9900">Git</span>. </p>
+               <h2 class="title"><span style="font-size: 36px">About Time Bound</span></h2>
+            <p class="maintext">Time Bound is a Contra-inspired, GMU themed Run-and-Gun shooter developed for the Winnitron indie arcade platform and PC. Play as one of four classes to stop violent Stardust robots from the future from taking over the George Mason campus!</p>
+            <h2 class="title"><span style="font-size: 36px">My Contributions</span></h2>
+            <h3 class="contrtitle">The Player</h3>
+            <p class="maintext">I developed the main player controller of Time Bound. Alongside the standard moving, jumping, and crouching, players also have eight-directional weapons aiming. This aiming system is controlled by state machine logic, limiting a player’s aim direction based off of their movement state. Each player also has internal 3D semisolid logic. This always allows us to jump through, or drop down from, specially marked platforms without affecting any other players or enemies.</p> 
+            <h3 class="contrtitle">Bosses</h3>
+            <p class="maintext">Bosses in Time Bound utilize a highly scalable and easy to use core class. This core handles all boss logic, including multiple phases with unique attacks, transitioning between phases based on current health, scaling health based on the current number of players, and dynamic hitboxes/hurtboxes. Time Bound features two bosses throughout gameplay, both of which utilize the boss core class and attacks I wrote.</p>
+            <h3 class="contrtitle">Intergration</h3>
+            <p class="maintext">As a skilled programmer on the project, I was in charge of integrating other programmers’ code together to create unified gameplay systems. This included integrating the weapon system on the player, incorporating the game’s respawn system, and making sure each player has the correct controls from the game’s player manager.</p>
+            <h2 class="title"><span style="font-size: 36px">Gameplay Development Video</span></h2>
+              <h3 class="contrtitle" style="margin-bottom: 20px">Footage seen here is subject to change</h3>
+            <span style="margin-left: 20px"><iframe width="854" height="480" src="https://www.youtube.com/embed/Zo3ilGb1jCQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+            <h2 class="title"><span style="font-size: 36px">Full Game to Be Released Soon!</span></h2>
+            <!-- <span style="margin-left: 20px"><iframe width="640" height="480" src="https://www.youtube.com/embed/HIol2wtWvu0" title="Shadows Of The Nexus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+        </div>
+    <div id="about-me-section">
+    </div>
+  </div>
+    <div id="code-background">
+      <video id="background-video" autoplay muted loop playsinline>
+      <source src="beyondmental.github.io/TimeHighlight.mp4?tag=12" type="video/mp4">
+    </video>
+    </div>
+    <script>
+       const imgs = document.querySelectorAll('#about-me-section img');
+       const fullPage = document.querySelector('#fullpage');
+
+       imgs.forEach(img => {
+          img.addEventListener('click', function() {
+          fullPage.style.backgroundImage = 'url(' + img.src + ')';
+          fullPage.style.display = 'block';
+      });
+     });
+</script>
+
+</body>
+</html>
