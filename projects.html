@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Projects</title>
+    <meta name="description" content="Aidan Brownstein - Game Design and Development Projects">
+    <title>Aidan Brownstein - Projects</title>
     <link rel="stylesheet" href="beyondmental.github.io/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="banner">
             <div class="left-content">
                 <div class="logo">
-                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Aidan Brownstein Logo">
                 </div>
                 <div class="title">
                     <h1>Aidan Brownstein</h1>
@@ -20,145 +24,306 @@
             </div>
             <nav class="right-content">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="blog.html">Blog</a></li>-->
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="projects.html" class="active"><i class="fas fa-gamepad"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
+
     <div id="title-section">
-        <h1 class="bigtitle">Projects</h1>
-      <h2 class="subtitle">Games and Software I have<span style="color: #ff9900"> Designed & Developed!</span></h2>
-      <h2 class="subtitle" style="font-size: 24px">Click on the thumbnail for more info about each project</h2>
+        <div class="title-content animate-in">
+            <h1 class="bigtitle">Projects</h1>
+            <h2 class="subtitle">Games and Software I have <span class="highlight">Designed & Developed!</span></h2>
+            <p class="subtitle" style="font-size: 1.2rem;">Click on any project to learn more about it</p>
+        </div>
     </div>
-  <div id="about-me-section">
-     <h2 class="title"><span style="font-size: 36px"> Current Projects</span></h2>
-    <div class="about-me-content" style="justify-content: center">
-      <div class="project">
-          <a href="timebound.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/TimeThumbnail.png" alt="Time Bound" class="project-image">
-                    <video src="beyondmental.github.io/TimeHighlight.mp4" class="project-video" preload="none" muted loop playsinline></video>
-                </div>
-                <p class="project-title">Time Bound</p>
-          </a>
-        <p>GMU Themed Run-and-Gun Shooter</p>
-            </div>
-      <div class="project">
-          <a href="mochaway.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/beyondmental.github.io/MochaWay/MochaThumbnailNew.png" alt="Mocha Way Cafe" class="project-image">
-                    <video src="beyondmental.github.io/MochaWayHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
-                </div>
-                <p class="project-title">Mocha Way Cafe</p>
-                        </a>
-                <p>Virtual Reality Space Barista Simulator</p>
-            </div>
-      <div class="project">
-          <a href="devilhunters.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/DevilHuntersThumbnail.jpg" alt="Devil Hunters" class="project-image">
-                    <video src="beyondmental.github.io/DevilHuntersHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
-                </div>
-                <p class="project-title">Devil Hunters</p>
-                        </a>
-        <p>Anime-Inspired Fast-paced Tabletop RPG</p>
-            </div>
+
+    <div class="skills-bar">
+        <div class="skills-container">
+            <div class="skill-tag">Unity</div>
+            <div class="skill-tag">Unreal Engine</div>
+            <div class="skill-tag">C#</div>
+            <div class="skill-tag">C++</div>
+            <div class="skill-tag">Game Design</div>
+            <div class="skill-tag">3D Modeling</div>
+            <div class="skill-tag">Level Design</div>
+            <div class="skill-tag">Visual FX</div>
+        </div>
     </div>
-  </div>
-  <div id="about-me-section">
-  </div>
-    <div id="about-me-section">
-    <div class="about-me-content" style="justify-content: center">
-      <div class="project">
-          <a href="chromaspectra.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/ChromaspectraThumbnail.jpg" alt="ChromaSpectra" class="project-image">
-                    <video src="beyondmental.github.io/ChromaspectraHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+
+    <section id="current-projects">
+        <div id="about-me-section">
+            <h2 class="section-title animate-in"><i class="fas fa-rocket"></i> <span>Current Projects</span></h2>
+            <div class="projects-container">
+                <div class="project animate-in">
+                    <a href="timebound.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/TimeThumbnail.png" alt="Time Bound" class="project-image">
+                            <video src="beyondmental.github.io/TimeHighlight.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Time Bound</h3>
+                                <p class="project-desc">GMU Themed Run-and-Gun Shooter</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="project-title">ChromaSpectra</p>
-                        </a>
-        <p>Third-person Puzzler filled with Heart</p>
-            </div>
-      <div class="project">
-          <a href="RRR.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/RRRThumbnail.png" alt="R.R.R." class="project-image">
-                    <video src="beyondmental.github.io/RRRHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+
+                <div class="project animate-in">
+                    <a href="mochaway.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/beyondmental.github.io/MochaWay/MochaThumbnailNew.png" alt="Mocha Way Cafe" class="project-image">
+                            <video src="beyondmental.github.io/MochaWayHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Mocha Way Cafe</h3>
+                                <p class="project-desc">Virtual Reality Space Barista Simulator</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="project-title">R.R.R.</p>
-                        </a>
-        <p>Comedic Zombie 3D Third-Person Platformer</p>
-            </div>
-      <div class="project">
-          <a href="retainer.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/RetainerReformationThumbnail.png" alt="Retainer Reformation" class="project-image">
-                    <video src="beyondmental.github.io/RRHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+
+                <div class="project animate-in">
+                    <a href="devilhunters.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/DevilHuntersThumbnail.jpg" alt="Devil Hunters" class="project-image">
+                            <video src="beyondmental.github.io/DevilHuntersHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Devil Hunters</h3>
+                                <p class="project-desc">Anime-Inspired Fast-paced Tabletop RPG</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <p class="project-title">Retainer Reformation</p>
-                        </a>
-        <p>3D First Person Stealth Horror Game</p>
             </div>
+        </div>
+    </section>
+
+    <section id="completed-projects-1">
+        <div id="about-me-section">
+            <h2 class="section-title animate-in"><i class="fas fa-check-circle"></i> <span>Completed Projects</span></h2>
+            <div class="projects-container">
+                <div class="project animate-in">
+                    <a href="chromaspectra.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/ChromaspectraThumbnail.jpg" alt="ChromaSpectra" class="project-image">
+                            <video src="beyondmental.github.io/ChromaspectraHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">ChromaSpectra</h3>
+                                <p class="project-desc">Third-person Puzzler filled with Heart</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project animate-in">
+                    <a href="RRR.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/RRRThumbnail.png" alt="R.R.R." class="project-image">
+                            <video src="beyondmental.github.io/RRRHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">R.R.R.</h3>
+                                <p class="project-desc">Comedic Zombie 3D Third-Person Platformer</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project animate-in">
+                    <a href="retainer.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/RetainerReformationThumbnail.png" alt="Retainer Reformation" class="project-image">
+                            <video src="beyondmental.github.io/RRHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Retainer Reformation</h3>
+                                <p class="project-desc">3D First Person Stealth Horror Game</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="completed-projects-2">
+        <div id="about-me-section">
+            <div class="projects-container">
+                <div class="project animate-in">
+                    <a href="eggtale.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/EggTaleThumbnail.png" alt="EggTale" class="project-image">
+                            <video src="beyondmental.github.io/EggTaleHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">EggTale</h3>
+                                <p class="project-desc">Handdrawn 2D Platformer Takes Flight!</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project animate-in">
+                    <a href="springcleaning.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/SpringCleaningThumbnail.png" alt="Spring Cleaning" class="project-image">
+                            <video src="beyondmental.github.io/SpringCleaningHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Spring Cleaning</h3>
+                                <p class="project-desc">Visual Novel About Letting Go</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project animate-in">
+                    <a href="newtons.html" class="project-link">
+                        <div class="project-hover">
+                            <img src="beyondmental.github.io/TimeThumbnail.png" alt="Newton's Delivery Service" class="project-image">
+                            <video src="beyondmental.github.io/NewtonsHighlightVideo.mp4" class="project-video" preload="none" muted loop playsinline></video>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Newton's Delivery Service</h3>
+                                <p class="project-desc">Gravity Manipulating First-Person Platformer</p>
+                                <span class="view-project">View Project <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tech-showcase">
+        <h2 class="section-title animate-in"><i class="fas fa-code"></i> <span>Technologies I Use</span></h2>
+        <div class="tech-grid">
+            <div class="tech-item animate-in">
+                <i class="fab fa-unity"></i>
+                <span>Unity</span>
+            </div>
+            <div class="tech-item animate-in">
+                <i class="fab fa-unreal-engine"></i>
+                <span>Unreal Engine</span>
+            </div>
+            <div class="tech-item animate-in">
+                <i class="fab fa-cuttlefish"></i>
+                <span>C#</span>
+            </div>
+            <div class="tech-item animate-in">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item animate-in">
+                <i class="fas fa-cubes"></i>
+                <span>3D Modeling</span>
+            </div>
+            <div class="tech-item animate-in">
+                <i class="fas fa-gamepad"></i>
+                <span>Game Design</span>
+            </div>
+        </div>
     </div>
-  </div>
-  <div id="about-me-section">
-    <div class="about-me-content" style="justify-content: center">
-      <div class="project">
-          <a href="eggtale.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/EggTaleThumbnail.png" alt="EggTale" class="project-image">
-                    <video src="beyondmental.github.io/EggTaleHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
-                </div>
-                <p class="project-title">EggTale</p>
-                        </a>
-                <p>Handdrawn 2D Platformer Takes Flight!</p>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="beyondmental.github.io/NotMentalLogo.png" alt="Aidan Brownstein Logo">
+                <p>Game Designer & Programmer</p>
             </div>
-      <div class="project">
-          <a href="springcleaning.html">
-                <div class="project-hover">
-                    <img src="beyondmental.github.io/SpringCleaningThumbnail.png" alt="Spring Cleaning" class="project-image">
-                    <video src="beyondmental.github.io/SpringCleaningHighlightVid.mp4" class="project-video" preload="none" muted loop playsinline></video>
-                </div>
-                <p class="project-title">Spring Cleaning</p>
-                        </a>
-        <p>Visual Novel About Letting Go</P>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-    </div>
-    <div id="about-me-section">
-    </div>
-  </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:agbrownst@gmail.com">agbrownst@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aidan-brownstein-2573132a2/" target="_blank">LinkedIn</a></p>
+                <p><i class="fab fa-itch-io"></i> <a href="https://abrownstein.itch.io" target="_blank">itch.io</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aidan Brownstein. All rights reserved.</p>
+        </div>
+    </footer>
+
     <div id="code-background">
-            <video id="background-video" autoplay muted loop playsinline>
-      <source src="beyondmental.github.io/ProjectPageVid.mp4" type="video/mp4" class="background-video">
-    </video>
+        <video id="background-video" autoplay muted loop playsinline>
+            <source src="beyondmental.github.io/ProjectPageVid.mp4" type="video/mp4">
+        </video>
     </div>
-    <script>
-    // Get all project elements
-    const projects = document.querySelectorAll('.project');
-
-    // Add event listeners to each project
-    projects.forEach(project => {
-        const projectImage = project.querySelector('.project-image');
-        const projectVideo = project.querySelector('.project-video');
-        const backVideo = project.querySelector('.background-video');
-
-        projectImage.addEventListener('mouseenter', () => {
-            projectVideo.style.display = 'block'; // Show the video
-            projectVideo.play();
-            backVideo.pause();
-        });
-
-        projectImage.addEventListener('mouseleave', () => {
-            projectVideo.style.display = 'none'; // Hide the video
-            projectVideo.pause();
-            projectVideo.currentTime = 0; // Rewind video to the beginning
-            backVideo.play();
-        });
-    });
-</script>
-
+    
+    <script src="beyondmental.github.io/script.js"></script>
+    <style>
+        /* Additional styles specific to the projects page */
+        .tech-showcase {
+            background-color: var(--darker-bg);
+            padding: 80px 5%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .tech-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .tech-item:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 153, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(255, 153, 0, 0.2);
+        }
+        
+        .tech-item i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .tech-item span {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        #about-me-section {
+            padding: 80px 5%;
+        }
+        
+        .projects-container {
+            margin-bottom: 0;
+        }
+        
+        /* Fix for Font Awesome missing icons */
+        .fab.fa-unreal-engine:before {
+            content: "\f1b3"; /* Using the PlayStation icon as a stand-in */
+        }
+    </style>
 </body>
 </html>
