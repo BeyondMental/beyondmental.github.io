@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact</title>
+    <meta name="description" content="Contact Aidan Brownstein - Game Designer & Programmer">
+    <title>Aidan Brownstein - Contact</title>
     <link rel="stylesheet" href="beyondmental.github.io/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="banner">
             <div class="left-content">
                 <div class="logo">
-                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Your Logo">
+                    <img src="beyondmental.github.io/NotMentalLogo.png" alt="Aidan Brownstein Logo">
                 </div>
                 <div class="title">
                     <h1>Aidan Brownstein</h1>
@@ -20,33 +24,194 @@
             </div>
             <nav class="right-content">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="blog.html">Blog</a></li>-->
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="projects.html"><i class="fas fa-gamepad"></i> Projects</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
             </nav>
         </div>
     </header>
-    <div id="title-section">
-        <h1 class="bigtitle">Let's get in touch!</h1>
-      <h2 class="subtitle">If you need to reach me, you can find a way to do so <span style="color: #ff9900"> here!</span></h2>
-    </div>
-  </div>
-<div id="about-me-section">
-  <h2 class="title"><span style="font-size: 36px">Find Me Here!</span></h2>
-  <h3 class="contrtitle"><a href="mailto:agbrownst@gmail.com">agbrownst@gmail.com</a></h3>
-  <h3 class="contrtitle" style="margin-top: 50px"><a href="https://www.linkedin.com/in/aidan-brownstein-2573132a2/">LinkedIn</a></h3>
-  <h3 class="contrtitle" style="margin-top: 50px"><a href="https://abrownstein.itch.io">abrownstein.itch.io</a></h3>
-  </div>
-  <div id="about-me-section">
-  <h2 class="title"><span style="font-size: 36px">Resume</span></h2>
-    <object data="beyondmental.github.io/AidanBrownsteinResume.pdf" type="application/pdf" width="100%" height="800px" style="margin-left: 20px"></object>
-</div>>
-    <div id="code-background">
-      
-    </div>
-    <script src="beyondmental.github.io/script.js"></script>
 
+    <div id="title-section">
+        <div class="title-content animate-in">
+            <h1 class="bigtitle">Let's get in touch!</h1>
+            <h2 class="subtitle">If you need to reach me, you can find a way to do so <span class="highlight">here!</span></h2>
+        </div>
+    </div>
+
+    <div id="about-me-section">
+        <div class="contact-container">
+            <h2 class="section-title animate-in"><i class="fas fa-address-book"></i> <span>Find Me Here!</span></h2>
+            
+            <div class="contact-methods animate-in">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <a href="mailto:agbrownst@gmail.com" class="contact-link">agbrownst@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/aidan-brownstein-2573132a2/" class="contact-link" target="_blank">Aidan Brownstein</a>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fab fa-itch-io"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Itch.io</h3>
+                        <a href="https://abrownstein.itch.io" class="contact-link" target="_blank">abrownstein.itch.io</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-me-section">
+        <h2 class="section-title animate-in"><i class="fas fa-file-alt"></i> <span>Resume</span></h2>
+        <div class="resume-container animate-in">
+            <object data="beyondmental.github.io/AidanBrownsteinResume.pdf" type="application/pdf" width="100%" height="800px" class="resume-object"></object>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="beyondmental.github.io/NotMentalLogo.png" alt="Aidan Brownstein Logo">
+                <p>Game Designer & Programmer</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:agbrownst@gmail.com">agbrownst@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aidan-brownstein-2573132a2/" target="_blank">LinkedIn</a></p>
+                <p><i class="fab fa-itch-io"></i> <a href="https://abrownstein.itch.io" target="_blank">itch.io</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Aidan Brownstein. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="code-background">
+        <video id="background-video" autoplay muted loop playsinline>
+            <source src="beyondmental.github.io/ProjectPageVid.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <script src="beyondmental.github.io/script.js"></script>
+    <style>
+        /* Additional styles specific to the contact page */
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 153, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(255, 153, 0, 0.2);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            background-color: var(--primary-color);
+            color: var(--darker-bg);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+        
+        .contact-link {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .contact-link:hover {
+            transform: translateX(5px);
+        }
+        
+        .resume-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+        }
+        
+        .resume-object {
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-method {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .resume-object {
+                height: 500px;
+            }
+        }
+    </style>
 </body>
 </html>
